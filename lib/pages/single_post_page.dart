@@ -10,8 +10,8 @@ class SinglePostPage extends StatelessWidget {
   final String postId;
 
   const SinglePostPage({
-    Key key,
-    this.postId,
+    Key? key,
+    required this.postId,
   }) : super(key: key);
 
   @override

@@ -14,7 +14,7 @@ class Resposta extends StatelessWidget {
         color: Colors.blue,
         textColor: Colors.white,
         child: Text(textoResposta),
-        onPressed: selectHandler,
+        onPressed: selectHandler(),
       ),
     );
   }

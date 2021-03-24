@@ -12,6 +12,6 @@ abstract class QuestionarioService extends ChopperService {
       @Path('id') String id,
       );
 
-  static QuestionarioService create([ChopperClient client]) =>
+  static QuestionarioService create([ChopperClient? client]) =>
       _$QuestionarioService(client);
 }

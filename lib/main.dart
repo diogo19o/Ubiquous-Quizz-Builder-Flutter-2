@@ -156,7 +156,7 @@ void main() {
 class MyApp extends StatelessWidget {
   ChopperClient services;
 
-  MyApp({this.services});
+  MyApp({required this.services});
 
   @override
   Widget build(BuildContext context) {
@@ -168,7 +168,7 @@ class MyApp extends StatelessWidget {
     print("Digest as hex string: $digest");
 
     return Provider(
-      builder: (_) => services,
+      create: (_) => services,
       dispose: (_, ChopperClient services) => services.dispose(),
       child: MaterialApp(
         title: "Material App",

@@ -1,7 +1,9 @@
+import 'package:flutter/material.dart';
+
 class Album {
   final String id;
 
-  Album({this.id});
+  Album({required this.id});
 
   factory Album.fromJson(Map<String, dynamic> json) {
     var all = json['respostasDaPergunta'];
